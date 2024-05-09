@@ -7,6 +7,28 @@ import axios from 'axios'
 
 const AccountVerf = ()=>{
 
+     function openDialog() {
+                if(confirm("Are you sure want to confirm")){
+
+                axios.get(`http://116.0.45.14:5000/signUp/accountReq${id}`).then(
+                        response=>{
+                                if (response) { 
+                                        alert("Account has been approved")
+                                }
+                                 else { alert("not working") }
+                        }
+        
+                ).catch((error)=>{
+                        console.log(error)
+                })
+        }
+     }
+     
+     // Delete record
+     function deleteRecord() {
+        confirm("Are you sure want to delete this record")
+}
+
         useEffect(()=>{
        
                 axios.get('http://116.0.45.14:5000/signUp/accountReq').then(
@@ -63,7 +85,9 @@ return (
                                 <td className='w-3/12 '>{item.tCourse}</td>
                                 <td className='w-2/12 '>{item.tCnic}</td>
                                 <td className='w-2/12 '>{item.tDomicile}</td>
-                                <td className='w-1/12 items-center  justify-center gap-5 flex flex-row'><FaCheckCircle color='green' /><MdEdit /></td>
+                                <td className='w-1/12 items-center  justify-center gap-5 flex flex-row'>
+                                <FaCheckCircle className='cursor-pointer' color='green' size={20} onClick={openDialog} />
+                                <MdEdit size={20}  className='cursor-pointer' onClick={deleteRecord}/></td>
                                 </tr>
                     
                                         ))}
