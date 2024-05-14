@@ -148,7 +148,7 @@ return (
  <div className='flex flex-col w-6/12 bg-slate-50 rounded-tr-md px-14'>
 
         <div className='flex mt-2 align-middle justify-center'>
-                <Image src={profile} />
+                {/* <Image src={profile} /> */}
         </div>  
 
 <label>Add Profile Pricute</label>

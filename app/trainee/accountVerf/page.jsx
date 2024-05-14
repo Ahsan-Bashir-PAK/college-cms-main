@@ -26,13 +26,14 @@ const AccountVerf = ()=>{
  
                 
 const [data, setData] = useState([])
-
+// const [count, setCount] = useState(1)
+var counter = 1;
 
 return (
-                <div className='bg-slate-200  border w-10/12 h-4/5 m-auto p-2 items-center'>
-                        <div className="flex flex-row justify-center w-full p-4 gap-2 bg-gray-300">
+                <div className='bg-slate-100  border w-10/12 h-4/5 m-auto p-2 items-center'>
+                        <div className="flex flex-row justify-center w-full p-4 gap-2 bg-gray-100">
 
-                                <h1 className=' text-black  rounded-md text-lg text-center font-bold'> List of Trainee Registered Through Android Application
+                                <h1 className=' text-blue-950 rounded-md text-lg text-center font-bold'> List of Trainee Registered Through Android Application
                                 </h1>
                         </div>
 
@@ -40,7 +41,8 @@ return (
                         
                         <div className='flex flex-row w-full text-white bg-blue-400  '>
                         
-                        <div className='p-1 ml-1 w-3/12 '>Trainee Name</div>
+                        <div className='p-1 ml-1 w-8 '>Sr.</div>
+                        <div className='p-1 ml-1 w-2/12 '>Trainee Name</div>
                         <div className='p-1 ml-1 w-2/12 '>Father Name</div>
                         <div className='p-1 w-2/12 '>CNIC.</div>
                         <div className='p-1 ml-4  w-2/12 '>Course.</div>
@@ -58,7 +60,8 @@ return (
                                 data.map((item, index)=>(
                                         <div className='p-1 w-full border-b border-blue-400  flex flex-row'>
                                         
-                                        <div className='p-1 ml-1 w-3/12 '>{item.tName}</div>
+                                        <div className='p-1 ml-1 w-8 '>{`${counter++}`}</div>
+                                        <div className='p-1 ml-1 w-2/12 '>{item.tName} </div>
                                         <div className='p-1 ml-1 w-2/12 '>{item.tFName}</div>
                                         <div className='p-1    w-2/12 '>{item.tCnic}</div>
                                         <div className='p-1 ml-1 w-2/12 '>{item.tCourse}</div>
