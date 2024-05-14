@@ -57,7 +57,7 @@ return (
                         ">
 
                                 <div className=' text-white rounded-md text-lg text-center font-bold'> 
-                                Profile of Trainee: {datas.tName}
+                                Profile of Trainee:   {datas.tName}
                                 </div>
                         </div>
                         { datas && 
@@ -67,12 +67,12 @@ return (
                                 <table className='w-full  p-2' >
                                         <tbody>
                                                 <tr>
-                                                        <td colSpan={4} className='border border-black p-2 bg-gray-600 text-white'>Personal Information</td>
+                                                        <td colSpan={4} className='border border-black p-2 bg-gray-600 text-white'>1.  Personal Information</td>
                                                 </tr>
                                         <tr  className='border border-black p-2'>
-                                                <td className='border p-2 border-black w-60'>Trainee Name</td>
+                                                <td className='border p-2 border-black w-60'>Name of Trainee</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tName}</td>
-                                                <td className='border p-2 border-black w-60'>Father Name</td>
+                                                <td className='border p-2 border-black w-60'>Father's Name</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tFName}</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
@@ -88,13 +88,25 @@ return (
                                                 <td className='border p-2 border-black w-80'>{datas.tDomicile}</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
+                                                <td className='border p-2 border-black w-60'>Institute</td>
+                                                <td className='border p-2 border-black w-80'></td>
+                                                <td className='border p-2 border-black w-60'>Degree Name</td>
+                                                <td className='border p-2 border-black w-80'></td>
+                                        </tr>
+                                        <tr  className='border border-black p-2'>
+                                                <td className='border p-2 border-black w-60'>Marital Status</td>
+                                                <td className='border p-2 border-black w-80'></td>
+                                                <td className='border p-2 border-black w-60'>Email Address</td>
+                                                <td className='border p-2 border-black w-80'></td>
+                                        </tr>
+                                        <tr  className='border border-black p-2'>
                                                 <td className='border p-2 border-black w-60'>Permanent Address</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tPA}</td>
                                                 <td className='border p-2 border-black w-60'>Postal Address</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tCA}</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
-                                                <td className='border p-2 border-black w-60'>Emergency Contact#</td>
+                                                <td className='border p-2 border-black w-60'>Emergency Contact No.</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tEmgcontact}</td>
                                                 <td className='border p-2 border-black w-60'>Relation with Emergency Contact Person</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tRelation}</td>
@@ -106,12 +118,15 @@ return (
                                                 <td className='border p-2 border-black w-80'>{datas.tReligion}</td>
                                         </tr>
                                        <tr  className='border border-black p-2'>
-                                                <td colSpan={2} className='border p-2 border-black w-60'>Personal Contact #</td>
-                                                <td colSpan={2} className='border p-2 border-black w-80'>0300-8523612</td>
+                                                <td  className='border p-2 border-black w-60'>Personal Contact No.</td>
+                                                <td className='border p-2 border-black w-60'>
+                                                0300-8523612
+                                                </td>
+                                                <td colSpan={2} className='border p-2 border-black w-80'></td>
                                                 
                                         </tr>
                                         <tr>
-                                                        <td colSpan={4} className='border border-black p-2 bg-gray-600 text-white'>Service Information</td>
+                                                        <td colSpan={4} className='border border-black p-2 bg-gray-600 text-white'>2.   Service Information</td>
                                                 </tr>
                                         <tr  className='border border-black p-2'>
                                                 <td className='border p-2 border-black w-60'>Rank</td>
@@ -120,34 +135,40 @@ return (
                                                 <td className='border p-2 border-black w-80'>{datas.tCourse}</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
-                                                <td className='border p-2 border-black w-60'>Date Of Appointment</td>
-                                                <td className='border p-2 border-black w-80'>{datas.tJoinService}</td>
                                                 <td className='border p-2 border-black w-60'>Date of Joining Govt. Service</td>
+                                                <td className='border p-2 border-black w-80'>{datas.tJoinService}</td>
+                                                <td className='border p-2 border-black w-60'>Date of Joining NHMP</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tJoinNHMP}</td>
+                                        </tr>
+                                        <tr  className='border border-black p-2'>
+                                                <td className='border p-2 border-black w-60'>Status</td>
+                                                <td className='border p-2 border-black w-80'></td>
+                                                <td className='border p-2 border-black w-60'>Department</td>
+                                                <td className='border p-2 border-black w-80'></td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
                                                 <td className='border p-2 border-black w-60'>Driving License No.</td>
                                                 <td className='border p-2 border-black w-80'>0000SKP-NHMP</td>
-                                                <td className='border p-2 border-black w-60'>DL issuing Authority</td>
+                                                <td className='border p-2 border-black w-60'>Driving License issuing Authority</td>
                                                 <td className='border p-2 border-black w-80'>NHMP</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
                                                 <td className='border p-2 border-black w-60'>Driving License Category</td>
                                                 <td className='border p-2 border-black w-80'>LTV</td>
-                                                <td className='border p-2 border-black w-60'>DL Expiry Date</td>
+                                                <td className='border p-2 border-black w-60'>Driving License Expiry Date</td>
                                                 <td className='border p-2 border-black w-80'>11-05-2028</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
                                                 <td className='border p-2 border-black w-60'>Posting Zone</td>
                                                 <td className='border p-2 border-black w-80'>Motorway Central-I</td>
                                                 <td className='border p-2 border-black w-60'>Date of Arrival in College</td>
-                                                <td className='border p-2 border-black w-80'>05-05-2024</td>
+                                                <td className='border p-2 border-black w-80'>05-05-2024 (Sunday)</td>
                                         </tr>
                                         <tr  className='border border-black p-2'>
-                                                <td className='border p-2 border-black w-60'>Professional Experience</td>
+                                                <td className='border p-2 border-black w-60'>Previous Professional Experience (if any)</td>
                                                 <td className='border p-2 border-black w-80'>{datas.tExp}</td>
-                                                <td className='border p-2 border-black w-60'>Date of Arrival in College</td>
-                                                <td className='border p-2 border-black w-80'>{datas.tArrivalCollege}</td>
+                                                <td className='border p-2 border-black w-60'>Previous Courses (if any)</td>
+                                                <td className='border p-2 border-black w-80'></td>
                                         </tr>
                                       
                                         </tbody>
@@ -157,7 +178,7 @@ return (
                                }
                         <div className='w-full p-2 flex flex-row'>
                                 <div className='w-8/12 p-2 text-red-800 italic font-semibold'>
-                                        *Note: Training Branch shall approve request after due verification
+                                        *Note: Training Branch shall approve request after due verification within 72 hours after Registeration.
                                 </div>
                                 <div className='w-4/12  p-2 gap-4 flex flex-row justify-end items-end'>
                                 <input type="button" value="Reject"  className='p-2 bg-red-800 text-white rounded-sm w-40 cursor-pointer hover:bg-gradient-to-br hover:from-red-700 hover:to-red-400' />

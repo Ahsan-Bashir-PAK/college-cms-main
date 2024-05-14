@@ -58,13 +58,13 @@ return (
                         <div>
                         {data && 
                                 data.map((item, index)=>(
-                                        <div className='p-1 w-full border-b border-blue-400  flex flex-row'>
+                                        <div className={`${item.tCourse == '39th Upper Class'? "bg bg-red-100": "bg-slate-200"} p-1 w-full border-b border-blue-400  flex flex-row `}>
                                         
                                         <div className='p-1 ml-1 w-8 '>{`${counter++}`}</div>
                                         <div className='p-1 ml-1 w-2/12 '>{item.tName} </div>
                                         <div className='p-1 ml-1 w-2/12 '>{item.tFName}</div>
                                         <div className='p-1    w-2/12 '>{item.tCnic}</div>
-                                        <div className='p-1 ml-1 w-2/12 '>{item.tCourse}</div>
+                                        <div className=" p-1 ml-1 w-2/12 ">{item.tCourse}</div>
                                         <div className='p-1 ml-1 w-2/12 flex flex-wrap text-wrap '>{item.tDomicile}</div>
                                         <div className='p-1 ml-2 w-1/12 flex rounded-md items-center justify-center
                                         flex-row bg-green-500 '>

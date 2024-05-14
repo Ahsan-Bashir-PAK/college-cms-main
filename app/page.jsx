@@ -23,20 +23,20 @@ export default function Home() {
 const databar = [
    {
      name: 'Upper Class Course',
-     uv: 52,
-     pv: 60,
+     'Number of Trainees': 52,
+     'Courses': 60,
      amt: 1400,
    },
    {
      name: 'Probationer Course',
-     uv: 43,
-     pv: 60,
+     'Number of Trainees': 43,
+     'Courses': 60,
      amt: 1506,
    },
    {
      name: 'Intermediate Class Course',
-     uv: 42,
-     pv: 60,
+     'Number of Trainees': 42,
+     'Courses': 60,
      amt: 989,
    },
    
@@ -232,8 +232,8 @@ const [Probationer, setProbationer] = useState("")
                                  <YAxis />
                                  <Tooltip />
                                  <Legend />
-                                 <Bar dataKey="uv" barSize={20} fill="#413ea0" />
-                                 <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+                                 <Bar dataKey="Number of Trainees" barSize={20} fill="#413ea0" />
+                                 {/* <Line type="monotone" dataKey="Courses" stroke="#ff7300" /> */}
                               </ComposedChart>
       </ResponsiveContainer>
                         </div>
